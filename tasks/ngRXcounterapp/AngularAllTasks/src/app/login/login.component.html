@@ -1,0 +1,35 @@
+<div class="loginn">
+
+    
+        <h2>Login</h2>
+    <label>Username: </label>
+    <input id="input" type="test" placeholder="Username" [(ngModel)]="login.userid" /><br>
+    
+
+    <br>
+    <label>Password: </label>
+    <input id="input" type="password" placeholder="password" [(ngModel)]="login.password" /><br><br>
+
+    <!-- <br>Username: {{ login.userid}}
+    <br>Password: {{ login.password}} -->
+
+    <div>
+        <button (click)="validate()" type="button" class="btn btn-primary">Submit</button>
+    </div>
+    <div *ngIf="loginSuccess">
+        <img src="assets/success.png" alt="Login success">
+
+        <div>
+            <ul>
+                <li *ngFor="let course of courses; let i = index">
+                    {{i}} - {{course.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="loginFailed">
+        <img src="assets/failed.png" alt="Login success">
+    </div>
+    <div>{{ result }}</div>
+
+</div>
