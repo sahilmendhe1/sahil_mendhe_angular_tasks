@@ -1,0 +1,17 @@
+<div>
+    <h3>{{title}}</h3>
+</div>
+<br />
+<div>
+    <button type="button" (click)="show()">Show</button>
+    <button type="button" (click)="hide()">Hide</button>
+</div>
+
+<br />
+<br />
+<div>
+    <div *ngIf="value" id="msgText">
+        {{message}}
+    </div>
+    
+</div>
