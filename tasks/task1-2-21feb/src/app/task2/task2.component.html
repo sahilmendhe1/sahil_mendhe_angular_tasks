@@ -1,0 +1,31 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Technology</th>
+      <th>City</th>
+      <th>Experience</th>
+    </tr>
+    <tr *ngFor="let CandidateList of CandidateList">
+      <td>{{ CandidateList.name }}</td>
+      <td>{{ CandidateList.technology }}</td>
+      <td>{{ CandidateList.city }}</td>
+      <td>{{ CandidateList.experience }}</td>
+    </tr>
+</table>
+
+<h2>Pune</h2>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Technology</th>
+      <th>City</th>
+      <th>Experience</th>
+    </tr>
+    <tr *ngFor="let CandidateList of candidateList">
+      <td>{{ CandidateList.name }}</td>
+      <td>{{ CandidateList.technology }}</td>
+      <td >{{ puneCandidate }}</td>
+      <td>{{ CandidateList.experience }}</td>
+    </tr>
+</table>
+
