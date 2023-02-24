@@ -1,0 +1,82 @@
+<div class="todos">
+
+    <form (submit)="addTodo()">
+
+        <table class="table1">
+            <tr>
+                <th>
+                    <input type="text" name="inputTodos" placeholder="Enter Movie Name..." class="todo-input"
+                        [(ngModel)]="movieName" />
+                </th>
+                <th>
+                    <input type="number" name="inputTodos" placeholder="Enter Number Of Tickets" class="todo-input"
+                        [(ngModel)]="noOfTickets" />
+                </th>
+                <th>
+                    <input type="date" name="inputTodos" placeholder="Date" class="todo-input"
+                        [(ngModel)]="movieBookingDate" />
+                </th>
+                <th>
+
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </table>
+        <input #addBooking type="submit" value="Add Booking" class="todo-submit" />
+    </form>
+
+    <table class="headingOfTable"> 
+    
+</table>
+<table class="table3">
+            <th id="th1">Movie ID</th>
+            <th id="th2">Movie Name</th>
+            <th id="th3">Number Of Tickets</th>
+            <th id="th4">Date</th>
+            <th id="th5">Total Amount</th>
+            <th id="th6">Action</th>
+            <th id="th7">Action</th>
+</table>
+    <table class="table2">
+       
+            
+       
+        <div *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '')}}">
+            <table>                
+                <tr>
+                    <th>{{ i }}</th>
+                    <th id="moviename">{{todo.movieName}}</th>
+                    <th>{{todo.noOfTickets}}</th>
+                    <th id="date1">{{todo.movieBookingDate}}</th>
+                    <th id="total">{{todo.noOfTickets*150}}</th>
+                    <th><button class="update">Update</button></th>
+                    <th><button class="delete" (click)="deleteTodo(i)">Remove</button></th>
+                </tr>
+            </table>
+
+            <!-- <div class="content" (click)="toggleDone(i)">{{ todo.completed }} </div> -->
+
+        </div>
+    </table>
+</div>
+
+
+
+
+<!-- <div class="todos">
+    <form (submit)="addTodo()">
+        <input type="text"
+        name="inputTodos" placeholder="Enter todo..."
+        class="todo-input"
+        [(ngModel)]="inputTodo"/>
+        
+        <input type="submit" value="Add Booking" class="todo-submit" /> 
+       </form>
+    <div *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '')}}">
+        <div class="id">{{ i }}</div>
+        <div class="content" (click)="toggleDone(i)">{{ todo.content }} </div>
+        <button class="delete" (click)="deleteTodo(i)">Remove</button>
+    </div>
+</div> -->

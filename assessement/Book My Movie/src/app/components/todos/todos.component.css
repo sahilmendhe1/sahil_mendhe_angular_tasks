@@ -1,0 +1,152 @@
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color: #EEE;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+
+.todo-submit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #FE4880;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.delete{
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+    font-weight: 700;
+	background-color: rgb(236, 127, 145);
+	padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+th{
+	padding-left: 30px;
+	padding-right: 55px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+    font-size: 24;
+	
+
+}
+
+.update{
+	font-size: 15px;
+    font-weight: 700;
+	background-color: rgb(236, 127, 145);
+	border: none;
+    border-radius: 5px;
+	padding: 5px 10px;
+    border: none;
+	color: white;
+
+}
+
+
+.table1{
+	margin-left: 225px;
+	text-align: center;
+	padding-left: 30px;
+    padding-right: 55px;
+}
+
+.table2{
+	margin-left: 5cm;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.headingOfTable{
+	margin-left: 5cm;
+}
+
+#moviename{
+	width: 300px;
+}
+#date1{
+width: 100px;
+}
+#total{
+	width: 50px;
+}
+
+.table3{
+	margin-left: 5cm;
+	text-align: center;
+	border-bottom:2px solid #FE4880;
+	
+}
+#th1{
+	width: 70px;
+	text-align: center;
+}
+#th2{
+	width: 200px;
+	text-align: center;
+}
+#th3{
+	width: 100px;
+	text-align: center;
+}
+#th4{
+	width: 35px;
+	text-align: center;
+}
+
+#th5{
+	width: auto;
+	text-align: center;
+}
+#th6{
+	width: auto;
+	text-align: center;
+}
+#th7{	
+	width: auto;
+    text-align: center;
+}
