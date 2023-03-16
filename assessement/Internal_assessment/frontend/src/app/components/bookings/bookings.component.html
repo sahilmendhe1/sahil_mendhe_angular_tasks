@@ -1,0 +1,40 @@
+<div class="tables">
+    <table class="tables">
+        <tr *ngFor="
+            let booking of bookings
+          ">
+            <mat-card>
+        <tr>
+            <th class="image">
+                <img
+                    src="https://images.squarespace-cdn.com/content/v1/5eb48d3fef49df153d320521/1593108921611-2W3DNXP5QBMGATU3AGIY/Cover+Image">
+            </th>
+            <th class="th1">
+                <h1>{{booking.movieName}}</h1>
+            </th>
+            <th class="th1">
+                <h1>{{booking.date | date}}</h1>
+            </th>
+            <th class="th1">
+
+                <h1>Tickets: {{booking.noOfTickets}}</h1>
+            </th>
+            <th class="th1">
+                <h1>$150</h1>
+            </th>
+            <th>
+                <button mat-button color="accent" (click)="onDeleteBooking(booking._id)"><mat-icon>
+                        delete
+                    </mat-icon></button>
+            </th>
+            <th>
+                <button mat-button color="primary" (click)="onUpdateBooking(booking)"><mat-icon>
+                        edit
+                    </mat-icon></button>
+            </th>
+        </tr>
+        </mat-card>
+
+        </tr>
+    </table>
+</div>
